@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio | UIUX Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #000000; color: #f5f5f7; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; scroll-behavior: smooth; }
+        .glass-card { background: rgba(22, 22, 23, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.5s ease; }
+        .glass-card:hover { border-color: rgba(255, 255, 255, 0.3); transform: translateY(-5px); }
+        .apple-text { background: linear-gradient(180deg, #ffffff 0%, #86868b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-badge { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 6px 16px; border-radius: 100px; font-size: 12px; color: #a1a1a6; }
+    </style>
+</head>
+<body class="antialiased text-gray-300">
+
+    <nav class="fixed w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/5 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold tracking-tight text-xl">STUDIO</a>
+            <div class="hidden md:flex gap-10 text-[13px] font-medium tracking-wide uppercase">
+                <a href="#work" class="hover:text-white transition">Work</a>
+                <a href="#skills" class="hover:text-white transition">Expertise</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <a href="mailto:your@email.com" class="bg-white text-black px-4 py-1.5 rounded-full text-xs font-bold hover:bg-gray-200 transition">DOWNLOAD CV</a>
+        </div>
+    </nav>
+
+    <header class="pt-52 pb-32 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-blue-500 font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block underline decoration-blue-500/30 underline-offset-4">Class of 2025 • Looking for Opportunities</span>
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter apple-text mb-8">Designing with <br> intent.</h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto leading-relaxed">
+                I help companies solve complex problems through clean interface design and empathetic user research.
+            </p>
+        </div>
+    </header>
+
+    <section id="work" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-sm font-semibold text-gray-500 tracking-[0.3em] uppercase mb-12 italic">Featured Case Studies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card rounded-[2.5rem] overflow-hidden group col-span-1 md:col-span-2">
+                <div class="p-10 flex flex-col md:flex-row justify-between items-end">
+                    <div>
+                        <h3 class="text-4xl font-bold text-white mb-2">HealthFlow AI</h3>
+                        <p class="text-gray-400 text-lg italic">Redesigning the patient intake experience.</p>
+                        <div class="flex gap-2 mt-4">
+                            <span class="skill-badge">UX Research</span>
+                            <span class="skill-badge">Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 md:mt-0 text-xs font-mono text-gray-500">Uni Project / 2024</div>
+                </div>
+                <div class="h-[400px] bg-zinc-900 border-t border-white/5 flex items-center justify-center italic text-gray-700">Project Image Placeholder</div>
+            </div>
+            </div>
+    </section>
+
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-32 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-sm font-semibold text-gray-500 tracking-[0.3em] uppercase mb-8">Hard Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge text-white border-white/20">User Research</span>
+                    <span class="skill-badge text-white border-white/20">Wireframing</span>
+                    <span class="skill-badge text-white border-white/20">Design Systems</span>
+                    <span class="skill-badge text-white border-white/20">Interaction Design</span>
+                    <span class="skill-badge text-white border-white/20">A/B Testing</span>
+                    <span class="skill-badge text-white border-white/20">Information Architecture</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-sm font-semibold text-gray-500 tracking-[0.3em] uppercase mb-8">Software Toolkit</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge">Figma</span>
+                    <span class="skill-badge">Adobe Creative Suite</span>
+                    <span class="skill-badge">Framer</span>
+                    <span class="skill-badge">Spline (3D)</span>
+                    <span class="skill-badge">HTML/CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#0a0a0a] py-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-sm font-semibold text-gray-500 tracking-[0.3em] uppercase mb-16 text-center">Background</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row justify-between border-b border-white/5 pb-8">
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Bachelor of Design (Interaction)</h4>
+                        <p class="text-gray-400">Your University Name</p>
+                    </div>
+                    <p class="text-gray-500 mt-2 md:mt-0 italic">Expected 2025</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between border-b border-white/5 pb-8">
+                    <div>
+                        <h4 class="text-xl font-bold text-white">UI Design Intern</h4>
+                        <p class="text-gray-400">Tech Solutions Inc.</p>
+                    </div>
+                    <p class="text-gray-500 mt-2 md:mt-0">Summer 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="max-w-6xl mx-auto px-6 py-40 text-center">
+        <h2 class="text-5xl md:text-8xl font-bold apple-text tracking-tighter mb-12">Ready to contribute. <br> Let's chat.</h2>
+        <a href="mailto:your@email.com" class="text-2xl md:text-4xl text-white hover:text-gray-400 transition border-b-2 border-white/10 pb-2">your.name@gmail.com</a>
+        <div class="mt-20 flex justify-center gap-10 text-sm font-medium">
+            <a href="#" class="hover:text-white transition">LinkedIn</a>
+            <a href="#" class="hover:text-white transition">Dribbble</a>
+            <a href="#" class="hover:text-white transition">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
